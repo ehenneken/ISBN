@@ -1,5 +1,8 @@
 def is_valid_isbn(isbn):
-    """ISBN validator: see http://en.wikipedia.org/wiki/International_Standard_Book_Number"""
+    """
+    ISBN validator 
+    see http://en.wikipedia.org/wiki/International_Standard_Book_Number
+    """
     import re
     import operator
     isbn = re.sub("\D","X",re.sub("\W","",isbn))
